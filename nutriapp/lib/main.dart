@@ -9,6 +9,8 @@ import 'dart:async';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'buscador.dart';
 import 'lista_hist.dart';
+import 'mainScreen.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -96,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // the App.build method, and use it to set our appbar title.
           title: Text(widget.title),
         ),
-        body: currentScreen==0 ? BuscadorPage() : ListaHistorial(miHistorial),
+        body: currentScreen==0 ? BuscadorPage() : (currentScreen==1?ListaHistorial2():pantallaPrincipal()),
         bottomNavigationBar: BottomNavigationBar(
         onTap: (index){
           getHistorial();
