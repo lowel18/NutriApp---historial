@@ -10,7 +10,7 @@ class pantallaPrincipal extends StatefulWidget {
 
 class _pantallaPrincipalState extends State<pantallaPrincipal> {
 
-  Material myItem(String ruta,double alto,double ancho){
+  Material myItem(String ruta){
     return Material(
       color: Colors.white38,
       shadowColor: Color(0x802196F3),
@@ -50,9 +50,9 @@ class _pantallaPrincipalState extends State<pantallaPrincipal> {
             mainAxisSpacing: alto*0.03,
             padding: EdgeInsets.symmetric(horizontal: 16.0,vertical: 8.0),
             children: [
-              myItem('https://i.ibb.co/QjzwtVJ/bg-1.jpg',alto,ancho),
-              myItem('https://i.ibb.co/LzVd2VD/Rainbow-fruits-berries-background-on-white-Top-view-of-strawberries-blueberries-cherries-mango-apple.jpg',alto,ancho),
-              myItem('https://i.ibb.co/MC8K8c4/bg-fruta-5-2.jpg',alto,ancho),
+              myItem('https://i.ibb.co/QjzwtVJ/bg-1.jpg'),
+              myItem('https://i.ibb.co/LzVd2VD/Rainbow-fruits-berries-background-on-white-Top-view-of-strawberries-blueberries-cherries-mango-apple.jpg'),
+              myItem('https://i.ibb.co/MC8K8c4/bg-fruta-5-2.jpg'),
             ],
             staggeredTiles: [
               StaggeredTile.extent(2, alto*0.35),
